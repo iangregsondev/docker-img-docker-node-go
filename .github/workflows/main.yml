@@ -1,0 +1,15 @@
+name: start
+
+on:
+  push:
+    branches:
+      - "main"
+
+jobs:
+  build:
+    name: test
+    runs-on: ubuntu-20.04
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
